@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { shape } from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -19,5 +20,11 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  stats: PropTypes.arrayOf(
+    shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      package: PropTypes.number,
+    })
+  ),
 };
