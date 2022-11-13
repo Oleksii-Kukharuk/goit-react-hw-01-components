@@ -1,37 +1,51 @@
 import PropTypes from 'prop-types';
 import defaultImg from './default.png';
+import { ProfileCard } from './profile.styled';
+import {
+  ImgWraper,
+  Paragraph,
+  UserName,
+  UserStat,
+  UserStatItem,
+  Quantity,
+} from './profile.styled';
 
 export const Profile = ({
-  userName,
+  username,
   tag,
   location,
   avatar = defaultImg,
   stats,
 }) => {
   return (
-    <div className="profile">
+    <ProfileCard>
       <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name"> {userName}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <ImgWraper
+          src={avatar}
+          alt="User avatar"
+          className="avatar"
+          width="200px"
+        />
+        <UserName> {username}</UserName>
+        <Paragraph>@{tag}</Paragraph>
+        <Paragraph>{location}</Paragraph>
       </div>
 
-      <ul className="stats">
-        <li>
+      <UserStat>
+        <UserStatItem>
           <span className="label">Followers</span>
-          <span className="quantity"> {stats.followers}</span>
-        </li>
-        <li>
+          <Quantity> {stats.followers}</Quantity>
+        </UserStatItem>
+        <UserStatItem>
           <span className="label">Views</span>
-          <span className="quantity"> {stats.views}</span>
-        </li>
-        <li>
+          <Quantity> {stats.views}</Quantity>
+        </UserStatItem>
+        <UserStatItem>
           <span className="label">Likes</span>
-          <span className="quantity"> {stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+          <Quantity> {stats.likes}</Quantity>
+        </UserStatItem>
+      </UserStat>
+    </ProfileCard>
   );
 };
 
