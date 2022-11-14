@@ -6,6 +6,7 @@ export const Stats = styled.ul`
   padding-left: 0;
   margin: 0;
   justify-content: center;
+  width: 350px;
 `;
 
 export const SectionTitle = styled.h2`
@@ -14,6 +15,7 @@ export const SectionTitle = styled.h2`
 
 export const StatItem = styled.li`
   font-size: large;
+  flex-grow: 1;
   font-weight: 500;
   display: flex;
   flex-direction: column;

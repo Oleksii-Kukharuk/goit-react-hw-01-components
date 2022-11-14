@@ -1,8 +1,10 @@
 // import PropTypes from 'prop-types';
+import { Wraper, Row } from './transactions.styled';
+import './payment_type.css';
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
+    <Wraper className="transaction-history">
       <thead>
         <tr>
           <th>Type</th>
@@ -12,13 +14,13 @@ export const TransactionHistory = ({ items }) => {
       </thead>
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
-          <tr key={id}>
-            <td>{type}</td>
+          <Row key={id}>
+            <td className={type}>{type}</td>
             <td>{amount}</td>
             <td>{currency}</td>
-          </tr>
+          </Row>
         ))}
       </tbody>
-    </table>
+    </Wraper>
   );
 };

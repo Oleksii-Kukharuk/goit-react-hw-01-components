@@ -5,11 +5,11 @@ import { Stats, StatItem, SectionTitle } from './statistics.styled';
 export const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
-      {title && <SectionTitle className="title">{title}</SectionTitle>}
+      {title && <SectionTitle>{title}</SectionTitle>}
 
       <Stats>
         {stats.map(({ id, label, percentage }) => (
-          <StatItem className="item" key={id}>
+          <StatItem key={id}>
             <span className="label">{label}</span>
             <span className="percentage">{percentage}</span>
           </StatItem>

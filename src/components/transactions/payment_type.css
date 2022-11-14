@@ -1,0 +1,19 @@
+.invoice {
+  color: green;
+}
+
+.payment {
+  color: red;
+}
+.withdrawal {
+  background-color: rgb(243, 39, 73);
+}
+
+.deposit {
+  background-color: yellowgreen;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+}
