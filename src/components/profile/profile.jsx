@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultImg from './default.png';
-import { ProfileCard } from './profile.styled';
+import { ProfileCard } from './Profile.styled';
 import {
   ImgWraper,
   Paragraph,
@@ -8,7 +8,7 @@ import {
   UserStat,
   UserStatItem,
   Quantity,
-} from './profile.styled';
+} from './Profile.styled';
 
 export const Profile = ({
   username,

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { shape } from 'prop-types';
-import { Stats, StatItem, SectionTitle } from './statistics.styled';
+import { Stats, StatItem, SectionTitle } from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (

@@ -5,7 +5,7 @@ import {
   Offline,
   Wraper,
   ListWraper,
-} from './friends.styled';
+} from './Friends.styled';
 
 export const FriendList = ({ friends }) => {
   return (
