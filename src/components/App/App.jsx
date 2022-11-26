@@ -2,9 +2,9 @@ import { Profile } from 'components/Profiles/Profile';
 import user from 'origin/user';
 import { Statistics } from 'components/Statistic/Statistic';
 import data from 'origin/data';
-import { FriendList } from 'components/Friends/FriendList';
+import { FriendList } from 'components/Friend/FriendList';
 import friends from 'origin/friends';
-import { TransactionHistory } from 'components/Transactions/Transactions';
+import { TransactionHistory } from 'components/Transaction/Transaction';
 import transactions from 'origin/transactions.json';
 import { Container } from './App.styled';
 

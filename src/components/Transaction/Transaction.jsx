@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-import { Wraper, Row, TrType } from './Transactions.styled';
+import { Wraper, Row, TrType } from './Transaction.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (

@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const ListItem = styled.li`
   display: flex;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-  padding: 4px;
+  padding: 5px;
   width: 350px;
 `;
 
