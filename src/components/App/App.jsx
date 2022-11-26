@@ -1,6 +1,6 @@
 import { Profile } from 'components/Profiles/Profile';
 import user from 'origin/User';
-import { Statistics } from 'components/Statistics/Statistics';
+import { Statistics } from 'components/Statistic/Statistic';
 import data from 'origin/Data';
 import { FriendList } from 'components/Friends/FriendList';
 import friends from 'origin/Friends';
